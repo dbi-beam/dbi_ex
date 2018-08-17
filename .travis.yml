@@ -1,6 +1,6 @@
 language: elixir
 after_success: "bash <(curl -s https://codecov.io/bash)"
-script: "mix do bootstrap, deps.get, compile && mix test"
+script: "mix do bootstrap, deps.get, compile && mix coveralls.json"
 otp_release: 20.3
 elixir:
   - 1.6.5

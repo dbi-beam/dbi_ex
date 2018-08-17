@@ -43,7 +43,13 @@ defmodule DBI.Mixfile do
   end
 
   defp aliases do
-    [test: ["test --no-start --cover", "coveralls.json"],
-     bootstrap: ["local.rebar --force", "local.hex --force"]]
+    [test: ["test --no-start --cover"],
+     bootstrap: ["local.rebar --force", "local.hex --force"],
+     clean: [&full_clean/1]]
+  end
+
+  defp full_clean(_) do
+    File.rm_rf "_build"
+    File.rm_rf "cover"
   end
 end
