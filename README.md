@@ -15,7 +15,7 @@ Database Interface for Elixir. This is an abstract implementation to use the mos
 To use it, with mix, you only need to add the dependency to the mix.exs file:
 
 ```elixir
-{:dbi, "~> 1.1.0"}
+{:dbi_ex, "~> 1.1.5"}
 ```
 
 ### Configuration
