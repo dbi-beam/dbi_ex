@@ -25,7 +25,7 @@ defmodule DBI.Mixfile do
 
   defp deps do
     [{:dbi, "~> #{@version}"},
-     {:ex_doc, ">= 0.0.0", only: :dev}]
+     {:ex_doc, "~> 0.18.0", only: :dev}]
   end
 
   defp package do

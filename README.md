@@ -1,10 +1,10 @@
 DBI for Elixir
 ==============
 
-[![Build Status](https://api.travis-ci.org/altenwald/dbi.png)](https://travis-ci.org/altenwald/dbi)
-[![Codecov](https://img.shields.io/codecov/c/github/altenwald/dbi.svg)](https://codecov.io/gh/altenwald/dbi)
-[![License: LGPL 2.1](https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20v2.1-blue.svg)](https://raw.githubusercontent.com/altenwald/dbi/master/COPYING)
-[![Hex](https://img.shields.io/hexpm/v/dbi.svg)](https://hex.pm/packages/dbi)
+[![Build Status](https://api.travis-ci.org/dbi-beam/dbi_ex.png)](https://travis-ci.org/dbi-beam/dbi_ex)
+[![Codecov](https://img.shields.io/codecov/c/github/dbi-beam/dbi_ex.svg)](https://codecov.io/gh/dbi-beam/dbi_ex)
+[![License: LGPL 2.1](https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20v2.1-blue.svg)](https://raw.githubusercontent.com/dbi-beam/dbi_ex/master/COPYING)
+[![Hex](https://img.shields.io/hexpm/v/dbi_ex.svg)](https://hex.pm/packages/dbi_ex)
 
 Database Interface for Elixir. This is an abstract implementation to use the most common database libraries ([p1_mysql][1], [epgsql][2] and [esqlite][4], and others you want) to use with standard SQL in your programs and don't worry about if you need to change between the main databases in the market.
 
