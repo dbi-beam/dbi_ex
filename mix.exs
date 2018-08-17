@@ -15,7 +15,13 @@ defmodule DBI.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
-     aliases: aliases()]
+     aliases: aliases(),
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: ["coveralls": :test,
+                         "coveralls.detail": :test,
+                         "coveralls.post": :test,
+                         "coveralls.html": :test,
+                         "coveralls.json": :test]]
   end
 
   def application do
@@ -25,6 +31,7 @@ defmodule DBI.Mixfile do
 
   defp deps do
     [{:dbi, "~> #{@version}"},
+     {:excoveralls, "~> 0.7.3", only: :test},
      {:ex_doc, "~> 0.18.0", only: :dev}]
   end
 
@@ -36,6 +43,8 @@ defmodule DBI.Mixfile do
   end
 
   defp aliases do
-    [test: "test --no-start"]
+    [test: ["test --no-start"],
+     bootstrap: ["local.rebar --force", "local.hex --force"],
+     cover: ["coveralls.json"]]
   end
 end

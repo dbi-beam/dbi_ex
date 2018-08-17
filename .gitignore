@@ -16,3 +16,5 @@ rel/*node
 *.sublime*
 _build/
 cobertura.xml
+cover/
+doc/
