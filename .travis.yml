@@ -1,0 +1,5 @@
+language: elixir
+after_success: "bash <(curl -s https://codecov.io/bash)"
+otp_release: 20.3
+elixir:
+  - 1.6.5
