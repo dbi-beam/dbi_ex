@@ -1,6 +1,6 @@
 language: elixir
 after_success: "bash <(curl -s https://codecov.io/bash)"
-script: "MIX_ENV=test mix do bootstrap, deps.get, test, cover"
+script: "mix do bootstrap, deps.get, compile && mix test"
 otp_release: 20.3
 elixir:
   - 1.6.5

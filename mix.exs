@@ -43,8 +43,7 @@ defmodule DBI.Mixfile do
   end
 
   defp aliases do
-    [test: ["test --no-start"],
-     bootstrap: ["local.rebar --force", "local.hex --force"],
-     cover: ["coveralls.json"]]
+    [test: ["test --no-start --cover", "coveralls.json"],
+     bootstrap: ["local.rebar --force", "local.hex --force"]]
   end
 end
